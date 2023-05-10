@@ -31,7 +31,8 @@
               <li><a href="#mus_prod">Music Producer</a></li>
               <li><a href="#br_set">Bearer token</a></li>
               <li><a href="#ua_set">User-Agent</a></li>
-              <li><a href="#int_set">Interval between sending messages/follow/unfollow</a></li>
+              <li><a href="#int_set">Interval between follow/unfollow</a></li>
+              <li><a href="#int_m_set">Interval between sending messages</a></li>
               <li><a href="#con_int_set">Interval between sending conecutive messages</a></li>
               <li><a href="#inbox_int_set">Message inbox refresh interval</a></li>
               <li><a href="#unf_act_set">Unfollow</a></li>
@@ -69,6 +70,9 @@
         <li>Messages inbox and reply function</li>
         <li>Message text templates, with the ability to send consecutive messages</li>
         <li>Good looking statistics</li>
+        <br />
+        <br />
+        <img src="images/preview.png" />
       </div>
 
       <div class="container" id="bot_settings">
@@ -129,11 +133,13 @@
             "authorization". Copy it full to the bot.</div>
         </div>
         <div id="int_set">
-          <h5>Interval between sending messages/follow/unfollow:</h5>
+          <h5>Interval between follow/unfollow:</h5>
           <div>This is interval between bot actions. For example, if you set timeout to 60 seconds, then bot gonna
-            follow
-            user,
-            wait 60 seconds, send him a message, wait another 60 seconds, then follow another user.</div>
+            follow user, wait 20 seconds, then its gonna do next action.</div>
+        </div>
+        <div id="int_m_set">
+          <h5>Interval between sending messages:</h5>
+          <div>Same as <a href="#int_set">Interval between follow/unfollow</a> but for messages.</div>
         </div>
         <div id="con_int_set">
           <h5>Interval between sending conecutive messages:</h5>
